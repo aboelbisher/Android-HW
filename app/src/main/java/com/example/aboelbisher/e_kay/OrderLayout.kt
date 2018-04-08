@@ -19,11 +19,11 @@ open class OrderLayout @JvmOverloads constructor(context: Context, attr: Attribu
 
         val params =  android.widget.LinearLayout.LayoutParams(width , height )
         this@OrderLayout.addView(this , params.apply {
-            topMargin = (resources.displayMetrics.density * 200).toInt()
-            leftMargin = (resources.displayMetrics.density * 10).toInt()
+//            topMargin = (resources.displayMetrics.density * 200).toInt()
+//            leftMargin = (resources.displayMetrics.density * 10).toInt()
         })
 
-        this.gravity = Gravity.LEFT
+        this.gravity = Gravity.CENTER
         setTextSize(TypedValue.COMPLEX_UNIT_DIP, 35f)
 
 
