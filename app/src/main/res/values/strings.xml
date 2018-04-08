@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">E-Kay</string>
+    <string name="header">Registration From</string>
+    <string name="fullName">Full Name:</string>
+    <string name="age">Age:</string>
+    <string name="country">Country:</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="userCreated">User Created!</string>
+
+    <string-array name="countries_arr">
+        <item>U.K</item>
+        <item>U.S</item>
+        <item>Germany</item>
+        <item>Italy</item>
+        <item>Francer</item>
+        <item>Spain</item>
+    </string-array>
+
+</resources>
