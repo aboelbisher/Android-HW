@@ -7,6 +7,10 @@
     <string name="SignUp">Sign Up</string>
     <string name="userCreated">User Created!</string>
     <string name="welcome">Welcome</string>
+    <string name="MakeOrder">Please make an Order:</string>
+    <string name="order">Order</string>
+    
+    <string name="ordernfo">Order Information</string>
 
     <string-array name="countries_arr">
         <item>U.K</item>
@@ -16,5 +20,6 @@
         <item>Francer</item>
         <item>Spain</item>
     </string-array>
+
 
 </resources>

@@ -1,16 +1,10 @@
-package com.example.aboelbisher.e_kay
+package com.example.aboelbisher.e_kay.Input
 
 import android.content.Context
-import android.graphics.Color
-import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.text.Editable
-import android.text.InputType
-import android.text.TextWatcher
 import android.util.AttributeSet
-import android.util.TypedValue
-import android.view.inputmethod.EditorInfo
 import android.widget.*
+import com.example.aboelbisher.e_kay.BaseLayout
+import com.example.aboelbisher.e_kay.R
 
 /*
  * Created by aboelbisher on 3/25/18.

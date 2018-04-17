@@ -1,11 +1,12 @@
-package com.example.aboelbisher.e_kay
+package com.example.aboelbisher.e_kay.Input
 
 import android.content.Context
-import android.graphics.Color
 import android.util.AttributeSet
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
+import com.example.aboelbisher.e_kay.BaseLayout
+import com.example.aboelbisher.e_kay.R
 
 class LandscapeLayout @JvmOverloads constructor(context: Context, attr: AttributeSet? = null, style: Int = -1) : BaseLayout(context, attr, style)
 {
@@ -51,9 +52,9 @@ class LandscapeLayout @JvmOverloads constructor(context: Context, attr: Attribut
         })
 
 
-        this.initTxtView(this.fullNameTxtView , R.string.fullName , this.lftLayout)
+        this.initTxtView(this.fullNameTxtView , R.string.fullName, this.lftLayout)
         this.initEditTxt(this.fullNameEditTxt , this.lftLayout)
-        this.initTxtView(this.ageTxtView , R.string.age , this.lftLayout)
+        this.initTxtView(this.ageTxtView , R.string.age, this.lftLayout)
 
         this.initEditTxt(this.ageEditTxt , this.lftLayout)
 
@@ -74,7 +75,7 @@ class LandscapeLayout @JvmOverloads constructor(context: Context, attr: Attribut
         this.addView(this.rghtLayout , LinearLayout.LayoutParams(rghtWdith, rghtHeight))
 
 
-        this.initTxtView(this.countryTxtView , R.string.country , this.rghtLayout)
+        this.initTxtView(this.countryTxtView , R.string.country, this.rghtLayout)
 
 
         this.rghtLayout.addView(this.spinner , LinearLayout.LayoutParams((this.rghtLayout.resources.displayMetrics.widthPixels).toInt() ,

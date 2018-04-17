@@ -1,12 +1,9 @@
 package com.example.aboelbisher.e_kay
 
 import android.content.Context
-import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.support.v4.content.ContextCompat
-import android.support.v4.content.ContextCompat.startActivity
 import android.text.Editable
 import android.text.InputType
 import android.text.TextWatcher
@@ -14,6 +11,7 @@ import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.inputmethod.EditorInfo
 import android.widget.*
+import com.example.aboelbisher.e_kay.Input.InfoValidator
 
 
 const val MY_EXTRA_MESSAGE = "EXTRA_MESSAGE"
@@ -159,7 +157,6 @@ open class BaseLayout @JvmOverloads constructor(context: Context, attr: Attribut
 
     fun getSavedInstance(savedInstance : Bundle?)
     {
-
 
         savedInstance?.let {
 

@@ -1,4 +1,4 @@
-package com.example.aboelbisher.e_kay
+package com.example.aboelbisher.e_kay.Input
 
 class InfoValidator
 {
@@ -13,7 +13,7 @@ class InfoValidator
         {
             val age = ageStr.replace("\\s".toRegex(), "").toInt()
 
-            return (age >= InfoValidator.Companion.MIN_AGE && age <= InfoValidator.Companion.MAX_AGE)
+            return (age >= MIN_AGE && age <= MAX_AGE)
         }
 
 

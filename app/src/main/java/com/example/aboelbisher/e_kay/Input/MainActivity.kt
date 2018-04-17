@@ -1,13 +1,13 @@
-package com.example.aboelbisher.e_kay
+package com.example.aboelbisher.e_kay.Input
 
 import android.content.Intent
 import android.content.res.Configuration.ORIENTATION_LANDSCAPE
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.AlarmClock
-import android.support.v4.content.ContextCompat
-import android.util.Log
 import android.widget.ScrollView
+import com.example.aboelbisher.e_kay.BaseLayoutDelegate
+import com.example.aboelbisher.e_kay.MY_EXTRA_MESSAGE
+import com.example.aboelbisher.e_kay.Order.OrderActivity
 
 class MainActivity : AppCompatActivity() , BaseLayoutDelegate
 {
@@ -63,6 +63,10 @@ class MainActivity : AppCompatActivity() , BaseLayoutDelegate
         val intent = Intent(this , OrderActivity::class.java).apply {
 
             putExtra(MY_EXTRA_MESSAGE, str)
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+
         }
 
         startActivity(intent)
